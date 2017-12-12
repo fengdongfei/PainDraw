@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+	<FrameLayout
+		android:id="@+id/ff"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:src="@drawable/bg"/>
+
+	<Button
+		android:id="@+id/clear"
+		android:text="清除"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button
+		android:id="@+id/xpc"
+		android:layout_toRightOf="@+id/clear"
+		android:text="撤销"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button
+		android:id="@+id/recover"
+		android:layout_toRightOf="@+id/xpc"
+		android:text="恢复"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<Button
+		android:id="@+id/savepic"
+		android:layout_toRightOf="@+id/recover"
+		android:text="保存"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<Button
+		android:id="@+id/paintcolor"
+		android:layout_below="@+id/clear"
+		android:text="颜色"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button
+		android:id="@+id/paintsize"
+		android:layout_below="@+id/clear"
+		android:layout_toRightOf="@+id/paintcolor"
+		android:text="大小"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+	<Button
+		android:id="@+id/xiangpicha"
+		android:layout_below="@+id/clear"
+		android:layout_toRightOf="@+id/paintsize"
+		android:text="橡皮擦"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+</RelativeLayout>
